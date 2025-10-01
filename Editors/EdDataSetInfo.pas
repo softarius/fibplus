@@ -35,7 +35,8 @@ uses
   {$ENDIF}
 
   uFIBEditorForm,  fraConditionsEdit
-    {$IFDEF D6+}, Variants {$ENDIF}
+    {$IFDEF D6+}, Variants {$ENDIF}  ,
+    pFibProps
    ;
 
 
@@ -91,7 +92,7 @@ type
    procedure PrepareComponents(aDatabase:TComponent);
   private
     FID:integer;
-    FCurCond: TStrings;
+    FCurCond: TConditions;
     procedure PrepareForm;
   public
     { Public declarations }
@@ -362,7 +363,7 @@ end;
 
 begin
 //  FCurCond:= TConditions.Create(Self);
-  FCurCond:=TStringList.Create; 
+  FCurCond:=TConditions.Create(self);
   CreateMemo;
   DBMemo.DataField:='SELECT_SQL';
   DBMemo.Parent   :=TabSheet2;

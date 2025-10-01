@@ -19,9 +19,9 @@
 {***************************************************************}
   FIBPlusVersion:integer   = 7;
   FIBPlusBuild:integer     = 632;
-  FIBPlusBuildDate = '17.02.2014';
-  FIBCustomBuild:integer   = 3171;
-  FIBVersionNote   = 'Release';
+  FIBPlusBuildDate = '01.10.2025';
+  FIBCustomBuild:integer   = 3172;
+  FIBVersionNote   = 'GitHub version';
   FIBPalette       = 'FIBPlus';
   FWork            = ''; 
   
