@@ -37,10 +37,10 @@ uses
 {$IFDEF LINUX}
     , VKCodes
 {$ENDIF} ,
-  pFibProps;
+  pFibProps, System.ImageList, Vcl.ImgList, Vcl.ToolWin, Vcl.DBCtrls,
+  System.Actions, Vcl.ActnList;
 
 type
-  TFrame = TFIBEditorCustomFrame; // Fake for D5
 
   TfraEdConditions = class(TFrame)
     Panel1: TPanel;
@@ -48,16 +48,19 @@ type
     Button1: TButton;
     Button2: TButton;
     Splitter1: TSplitter;
-    Button3: TButton;
-    Button4: TButton;
-    Button5: TButton;
     GroupBox2: TGroupBox;
     GroupBox1: TGroupBox;
     Panel3: TPanel;
     Memo1: TMemo;
     Panel4: TPanel;
     ListView1: TListView;
-    btnEdit: TButton;
+    ToolBar1: TToolBar;
+    ImageList1: TImageList;
+    ToolButtonAdd: TToolButton;
+    ToolButtonEdit: TToolButton;
+    ToolButtonDelete: TToolButton;
+    ToolButton4: TToolButton;
+    ToolButtonClear: TToolButton;
     procedure Memo1Exit(Sender: TObject);
     procedure ListView1Resize(Sender: TObject);
     procedure Button3Click(Sender: TObject);
@@ -201,9 +204,9 @@ begin
   GroupBox2.Caption := FPConditionsText;
   GroupBox1.Caption := FPConditionsNames;
   ListView1.Columns[0].Caption := FPConditionsColumnConditions;
-  Button3.Caption := FPConditionsDelete;
-  Button4.Caption := FPConditionsAdd;
-  Button5.Caption := FPConditionsClear;
+  ToolButtonAdd.Hint:= FPConditionsAdd;
+  ToolButtonDelete.Hint:= FPConditionsDelete ;
+  ToolButtonClear.Hint:=FPConditionsClear;
 
   Button1.Caption := SOKButton;
   Button2.Caption := SCancelButton;
