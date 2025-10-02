@@ -8,7 +8,7 @@ FIBPlus is a flexible and easy-to-use library of Delphi, C++ Builder, Kylix comp
 # Installation
 
   * Open project group or appropriate packages from `Packages` folder matching your Delphi compiler version.
-  * Compile and install design time packages.
+  * Compile all packages and install all design time packages.
   * Add source patch to library path in IDE for Win32/Win64 platforms.
 
 

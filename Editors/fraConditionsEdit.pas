@@ -260,9 +260,6 @@ begin
   GroupBox2.Caption := FPConditionsText;
   GroupBox1.Caption := FPConditionsNames;
   ListView1.Columns[0].Caption := FPConditionsColumnConditions;
-  Button3.Caption := FPConditionsDelete;
-  Button4.Caption := FPConditionsAdd;
-  Button5.Caption := FPConditionsClear;
 
   Button1.Caption := SOKButton;
   Button2.Caption := SCancelButton;

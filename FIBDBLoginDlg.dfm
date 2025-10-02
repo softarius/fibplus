@@ -47,6 +47,7 @@ object frmFIBDBLoginDlg: TfrmFIBDBLoginDlg
     Font.Pitch = fpVariable
     Font.Style = [fsBold]
     ParentFont = False
+    Transparent = False
   end
   object lbDBName: TLabel
     Left = 11

@@ -14,61 +14,57 @@ object fraEdConditions: TfraEdConditions
     BorderWidth = 4
     TabOrder = 0
     OnResize = ListView1Resize
-    ExplicitHeight = 365
     object Splitter1: TSplitter
       Left = 4
-      Top = 251
+      Top = 377
       Width = 376
       Height = 4
       Cursor = crVSplit
       Align = alBottom
       ExplicitLeft = 2
+      ExplicitTop = 251
     end
     object GroupBox2: TGroupBox
       Left = 4
-      Top = 4
+      Top = 177
       Width = 376
-      Height = 247
+      Height = 200
       Align = alClient
       Caption = 'Condition text'
       TabOrder = 0
-      ExplicitHeight = 227
       object Panel3: TPanel
         Left = 2
         Top = 15
         Width = 372
-        Height = 230
+        Height = 183
         Align = alClient
         BevelOuter = bvNone
         BorderWidth = 4
         TabOrder = 0
-        ExplicitHeight = 210
         object Memo1: TMemo
           Left = 4
           Top = 4
           Width = 364
-          Height = 222
+          Height = 175
           Align = alClient
           TabOrder = 0
           OnExit = Memo1Exit
-          ExplicitHeight = 202
         end
       end
     end
     object GroupBox1: TGroupBox
       Left = 4
-      Top = 255
+      Top = 4
       Width = 376
-      Height = 126
-      Align = alBottom
+      Height = 173
+      Align = alTop
       Caption = 'Condition Names'
       TabOrder = 1
-      ExplicitTop = 235
       object Panel4: TPanel
         Left = 2
         Top = 15
         Width = 372
-        Height = 109
+        Height = 156
         Align = alClient
         BevelOuter = bvNone
         BorderWidth = 4
@@ -77,7 +73,7 @@ object fraEdConditions: TfraEdConditions
           Left = 4
           Top = 29
           Width = 364
-          Height = 76
+          Height = 123
           Align = alClient
           Checkboxes = True
           Columns = <
@@ -156,19 +152,19 @@ object fraEdConditions: TfraEdConditions
     Align = alRight
     BevelOuter = bvNone
     TabOrder = 1
-    ExplicitHeight = 365
     object Button1: TButton
       Left = 6
-      Top = 4
+      Top = 10
       Width = 75
       Height = 25
       Caption = '&OK'
+      Default = True
       ModalResult = 1
       TabOrder = 0
     end
     object Button2: TButton
       Left = 6
-      Top = 35
+      Top = 41
       Width = 75
       Height = 25
       Cancel = True
@@ -176,63 +172,6 @@ object fraEdConditions: TfraEdConditions
       ModalResult = 2
       TabOrder = 1
     end
-<<<<<<< .mine
-    object Button4: TButton
-      Left = 6
-      Top = 12
-      Width = 75
-      Height = 25
-      Caption = '&Add'
-      TabOrder = 0
-      OnClick = Button4Click
-    end
-    object Button5: TButton
-      Left = 7
-      Top = 109
-      Width = 75
-      Height = 25
-      Caption = 'C&lear '
-      TabOrder = 4
-      OnClick = Button5Click
-    end
-    object btnEdit: TButton
-      Left = 7
-      Top = 43
-      Width = 75
-      Height = 25
-      Caption = '&Edit'
-      TabOrder = 5
-      OnClick = btnEditClick
-    end
-=======
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
->>>>>>> .theirs
   end
   object ImageList1: TImageList
     Left = 224
