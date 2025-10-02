@@ -2,62 +2,68 @@ object fraEdConditions: TfraEdConditions
   Left = 0
   Top = 0
   Width = 474
-  Height = 365
+  Height = 385
   TabOrder = 0
   object Panel1: TPanel
     Left = 0
     Top = 0
     Width = 384
-    Height = 365
+    Height = 385
     Align = alClient
     BevelOuter = bvNone
     BorderWidth = 4
     TabOrder = 0
     OnResize = ListView1Resize
+    ExplicitHeight = 365
     object Splitter1: TSplitter
       Left = 4
-      Top = 231
+      Top = 251
       Width = 376
       Height = 4
       Cursor = crVSplit
       Align = alBottom
+      ExplicitLeft = 2
     end
     object GroupBox2: TGroupBox
       Left = 4
       Top = 4
       Width = 376
-      Height = 227
+      Height = 247
       Align = alClient
       Caption = 'Condition text'
       TabOrder = 0
+      ExplicitHeight = 227
       object Panel3: TPanel
         Left = 2
         Top = 15
         Width = 372
-        Height = 210
+        Height = 230
         Align = alClient
         BevelOuter = bvNone
         BorderWidth = 4
         TabOrder = 0
+        ExplicitHeight = 210
         object Memo1: TMemo
           Left = 4
           Top = 4
           Width = 364
-          Height = 202
+          Height = 222
           Align = alClient
           TabOrder = 0
           OnExit = Memo1Exit
+          ExplicitHeight = 202
         end
       end
     end
     object GroupBox1: TGroupBox
       Left = 4
-      Top = 235
+      Top = 255
       Width = 376
       Height = 126
       Align = alBottom
       Caption = 'Condition Names'
       TabOrder = 1
+      ExplicitTop = 235
       object Panel4: TPanel
         Left = 2
         Top = 15
@@ -97,10 +103,11 @@ object fraEdConditions: TfraEdConditions
     Left = 384
     Top = 0
     Width = 90
-    Height = 365
+    Height = 385
     Align = alRight
     BevelOuter = bvNone
     TabOrder = 1
+    ExplicitHeight = 365
     object Button1: TButton
       Left = 8
       Top = 156
@@ -130,8 +137,8 @@ object fraEdConditions: TfraEdConditions
       OnClick = Button3Click
     end
     object Button4: TButton
-      Left = 7
-      Top = 11
+      Left = 6
+      Top = 12
       Width = 75
       Height = 25
       Caption = '&Add'
